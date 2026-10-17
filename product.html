@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | S Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">YOUR STYLE, YOUR WAY · S FASHION</div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">S<span>.</span></a>
+
+    <form class="search-form" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+
+    <nav class="header-actions">
+      <a href="wishlist.html">♡ <span>Wishlist</span></a>
+      <a href="login.html">♙ <span>Account</span></a>
+      <a href="cart.html">♧ <span>Bag</span><b id="cartCount">0</b></a>
+    </nav>
+  </header>
+
+  <nav class="category-nav">
+    <a href="products.html?category=Women">Women</a>
+    <a href="products.html?category=Men">Men</a>
+    <a href="products.html?category=Kids">Kids</a>
+    <a href="products.html?category=Beauty">Beauty</a>
+    <a href="products.html?category=Accessories">Accessories</a>
+    <a href="products.html?category=Footwear">Footwear</a>
+    <a href="products.html?category=Appliances">Appliances</a>
+  </nav>
+
+  <main class="page-container">
+    <p class="eyebrow">S FASHION / PRODUCT DETAILS</p>
+
+    <div id="productDetails">
+      <p class="loading-message">Loading product details...</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html">S<span>.</span></a>
+    <p>Style your way. Every day.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Shopping bag</a>
+    </div>
+    <small>© 2026 S Fashion. All rights reserved.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

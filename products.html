@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Products | S Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">DISCOVER YOUR STYLE · SHOP S FASHION</div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">S<span>.</span></a>
+
+    <form class="search-form" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+
+    <nav class="header-actions">
+      <a href="wishlist.html">♡ <span>Wishlist</span></a>
+      <a href="login.html">♙ <span>Account</span></a>
+      <a href="cart.html">♧ <span>Bag</span><b id="cartCount">0</b></a>
+    </nav>
+  </header>
+
+  <nav class="category-nav">
+    <a href="products.html?category=Women">Women</a>
+    <a href="products.html?category=Men">Men</a>
+    <a href="products.html?category=Kids">Kids</a>
+    <a href="products.html?category=Beauty">Beauty</a>
+    <a href="products.html?category=Accessories">Accessories</a>
+    <a href="products.html?category=Footwear">Footwear</a>
+    <a href="products.html?category=Appliances">Appliances</a>
+  </nav>
+
+  <main class="page-container">
+    <p class="eyebrow">THE S FASHION COLLECTION</p>
+    <h1 class="page-title" id="shopTitle">Shop All Products</h1>
+    <p class="page-subtitle">Find your favourites, from everyday essentials to statement pieces.</p>
+
+    <div class="shop-toolbar">
+      <p id="productCount">Loading products...</p>
+      <select id="sortSelect" aria-label="Sort products">
+        <option value="popular">Sort: Popular</option>
+        <option value="new">Newest first</option>
+        <option value="low">Price: Low to high</option>
+        <option value="high">Price: High to low</option>
+        <option value="discount">Biggest discount</option>
+      </select>
+    </div>
+
+    <div class="shop-layout">
+      <aside class="filters">
+        <h3>Categories</h3>
+
+        <label class="filter-option">
+          <input type="radio" name="category" value="" checked>
+          All products
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Women">
+          Women
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Men">
+          Men
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Kids">
+          Kids
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Beauty">
+          Beauty
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Accessories">
+          Accessories
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Footwear">
+          Footwear
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="category" value="Appliances">
+          Appliances
+        </label>
+
+        <hr style="border:0;border-top:1px solid #eee3e5;margin:20px 0">
+
+        <h3>Price range</h3>
+        <label class="filter-option">
+          <input type="radio" name="price" value="all" checked>
+          All prices
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="price" value="0-500">
+          Under ₹500
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="price" value="500-1000">
+          ₹500–₹1,000
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="price" value="1000-2000">
+          ₹1,000–₹2,000
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="price" value="2000-5000">
+          ₹2,000–₹5,000
+        </label>
+        <label class="filter-option">
+          <input type="radio" name="price" value="5000+">
+          ₹5,000+
+        </label>
+      </aside>
+
+      <section>
+        <div class="product-grid" id="shopProducts">
+          <p class="loading-message">Loading our collection...</p>
+        </div>
+        <p id="shopMessage" class="form-message" role="status"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html">S<span>.</span></a>
+    <p>Style your way. Every day.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">My account</a>
+      <a href="cart.html">Shopping bag</a>
+    </div>
+    <small>© 2026 S Fashion. All rights reserved.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>

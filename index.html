@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover fashion, beauty, accessories and lifestyle products at S Fashion.">
+  <title>S Fashion | Style Your Way</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    EXTRA 10% OFF YOUR FIRST ORDER · USE CODE WELCOME10
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">S<span>.</span></a>
+
+    <form class="search-form" id="searchForm">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search for products, brands and more"
+        aria-label="Search products"
+      >
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+
+    <nav class="header-actions">
+      <a href="login.html">♡ <span>Wishlist</span></a>
+      <a href="login.html">♙ <span>Account</span></a>
+      <a href="cart.html">♧ <span>Bag</span><b id="cartCount">0</b></a>
+    </nav>
+  </header>
+
+  <nav class="category-nav">
+    <a href="products.html?category=Women">Women</a>
+    <a href="products.html?category=Men">Men</a>
+    <a href="products.html?category=Kids">Kids</a>
+    <a href="products.html?category=Beauty">Beauty</a>
+    <a href="products.html?category=Accessories">Accessories</a>
+    <a href="products.html?category=Footwear">Footwear</a>
+    <a href="products.html?category=Appliances">Appliances</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">THE NEW SEASON EDIT</p>
+        <h1>Find your<br>kind of style.</h1>
+        <p>Fashion, beauty and everyday essentials — all in one place.</p>
+        <a class="primary-button" href="products.html">SHOP THE COLLECTION ↗</a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Fashion collection">
+        <div class="hero-label">YOUR STYLE. YOUR RULES.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE YOUR STYLE</p>
+          <h2>Shop by category</h2>
+        </div>
+        <a href="products.html">View all ↗</a>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card women" href="products.html?category=Women">
+          <span>01</span><h3>Women</h3><p>Everyday to extraordinary</p>
+        </a>
+        <a class="category-card men" href="products.html?category=Men">
+          <span>02</span><h3>Men</h3><p>Made for your moments</p>
+        </a>
+        <a class="category-card kids" href="products.html?category=Kids">
+          <span>03</span><h3>Kids</h3><p>Little looks, big personality</p>
+        </a>
+        <a class="category-card beauty" href="products.html?category=Beauty">
+          <span>04</span><h3>Beauty</h3><p>Your daily glow</p>
+        </a>
+        <a class="category-card accessories" href="products.html?category=Accessories">
+          <span>05</span><h3>Accessories</h3><p>The finishing touch</p>
+        </a>
+        <a class="category-card footwear" href="products.html?category=Footwear">
+          <span>06</span><h3>Footwear</h3><p>Step into something new</p>
+        </a>
+        <a class="category-card appliances" href="products.html?category=Appliances">
+          <span>07</span><h3>Appliances</h3><p>Smart everyday living</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <div>
+        <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+        <h2>Your first order,<br>your first favourite.</h2>
+        <p>Get 10% off on eligible orders above ₹500.</p>
+        <button class="coupon-button" id="copyCoupon">WELCOME10 · COPY CODE</button>
+      </div>
+      <div class="promo-decoration">S.</div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HANDPICKED FOR YOU</p>
+          <h2>Trending now</h2>
+        </div>
+        <a href="products.html?sort=popular">Explore all ↗</a>
+      </div>
+      <div class="product-grid" id="featuredProducts">
+        <p class="loading-message">Loading our collection...</p>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✧</span><h3>Curated finds</h3><p>Style for every mood and moment.</p></div>
+      <div><span>↗</span><h3>Easy shopping</h3><p>Your favourites, all in one place.</p></div>
+      <div><span>♡</span><h3>Your wishlist</h3><p>Keep the things you love close.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html">S<span>.</span></a>
+    <p>Style your way. Every day.</p>
+    <div class="footer-links">
+      <a href="products.html">Shop</a>
+      <a href="login.html">My account</a>
+      <a href="cart.html">Shopping bag</a>
+    </div>
+    <small>© 2026 S Fashion. All rights reserved.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | S Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">ONE LAST STEP TO YOUR NEW FAVOURITES</div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">S<span>.</span></a>
+    <nav class="header-actions">
+      <a href="products.html">Continue shopping</a>
+      <a href="cart.html">♧ <span>Shopping bag</span></a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <p class="eyebrow">SAFE AND SIMPLE CHECKOUT</p>
+    <h1 class="page-title">Checkout</h1>
+    <p class="page-subtitle">Enter your delivery details and select a payment method.</p>
+
+    <div class="cart-layout">
+      <section class="summary-card">
+        <h2>Delivery address</h2>
+
+        <form id="checkoutForm">
+          <div class="form-field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" required autocomplete="name">
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel"
+              required pattern="[0-9]{10}" maxlength="10"
+              inputmode="numeric" placeholder="10-digit mobile number">
+          </div>
+
+          <div class="form-field">
+            <label for="addressLine">House number and street</label>
+            <textarea id="addressLine" name="addressLine" rows="3"
+              required autocomplete="street-address"></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="city">City</label>
+            <input id="city" name="city" required autocomplete="address-level2">
+          </div>
+
+          <div class="form-field">
+            <label for="state">State</label>
+            <input id="state" name="state" required autocomplete="address-level1">
+          </div>
+
+          <div class="form-field">
+            <label for="pincode">PIN code</label>
+            <input id="pincode" name="pincode" required
+              pattern="[0-9]{6}" maxlength="6" inputmode="numeric"
+              autocomplete="postal-code">
+          </div>
+
+          <h2 style="margin-top:30px">Payment method</h2>
+
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="COD" checked>
+            <span><strong>Cash on Delivery</strong><br>Pay when your order arrives.</span>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="UPI">
+            <span><strong>UPI</strong><br>Requires payment gateway integration.</span>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="CARD">
+            <span><strong>Credit or Debit Card</strong><br>Requires secure payment gateway integration.</span>
+          </label>
+
+          <button class="form-button" type="submit" id="placeOrderButton">
+            PLACE ORDER
+          </button>
+
+          <p id="checkoutMessage" class="form-message" role="status"></p>
+        </form>
+      </section>
+
+      <aside class="summary-card">
+        <h2>Your order</h2>
+        <div id="checkoutItems"></div>
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="checkoutSubtotal">₹0</strong>
+        </div>
+
+        <form id="couponForm" class="coupon-form">
+          <input id="couponCode" placeholder="Coupon code" aria-label="Coupon code">
+          <button type="submit">APPLY</button>
+        </form>
+
+        <p id="couponMessage" class="form-message" role="status"></p>
+
+        <div class="summary-row">
+          <span>Discount</span>
+          <strong id="checkoutDiscount">₹0</strong>
+        </div>
+
+        <div class="summary-row summary-total">
+          <span>Total</span>
+          <strong id="checkoutTotal">₹0</strong>
+        </div>
+
+        <p class="notice">
+          UPI and card selections do not charge you yet. Real payments require a payment gateway.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html">S<span>.</span></a>
+    <p>Style your way. Every day.</p>
+    <small>© 2026 S Fashion. All rights reserved.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
